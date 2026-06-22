@@ -47,11 +47,11 @@
 }
 
 :root {
-  --background: oklch(0.9581 0 0);
+  --background: oklch(1 0 0);
   --foreground: oklch(0.2145 0.1197 269.33);
-  --card: oklch(0.9581 0 0);
+  --card: oklch(1 0 0);
   --card-foreground: oklch(0.2145 0.1197 269.33);
-  --popover: oklch(0.9581 0 0);
+  --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.2145 0.1197 269.33);
   --primary: oklch(0.2145 0.1197 269.33);
   --primary-foreground: oklch(1 0 0);
@@ -79,8 +79,23 @@
   --sidebar-accent-foreground: oklch(0.2145 0.1197 269.33);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  --gradient-primary: linear-gradient(79.4deg, #8c5e2c -37.58%, #e0ad70 94.92%);
 }
 
+@layer utilities {
+  .bg-primary-gradient {
+    background-image: var(--gradient-primary);
+  }
+
+  .text-primary-gradient {
+    background-image: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
+}
 @layer base {
   * {
     @apply border-border outline-ring/50;
