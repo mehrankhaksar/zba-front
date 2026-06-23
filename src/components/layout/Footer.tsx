@@ -15,7 +15,7 @@ const navItems = [
 
 export default function Footer() {
   return (
-    <footer className="relative">
+    <footer className="relative mt-32">
       <div className="absolute py-5 p-2.5 inset-x-80 -top-12 shadow-2xl rounded-xl bg-secondary text-secondary-foreground flex justify-around items-center">
         <div className="flex items-center gap-3 font-medium">
           <span className="bg-primary text-primary-foreground p-3 rounded-lg">
