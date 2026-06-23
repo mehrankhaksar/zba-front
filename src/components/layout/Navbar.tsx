@@ -26,7 +26,7 @@ export default function Navbar() {
         <div className="relative h-full flex justify-between items-center bg-background rounded-full px-6">
           <div className="relative h-20 w-36 shrink-0">
             <Image
-              src="/logo.svg"
+              src="/logo-1.svg"
               alt="Logo"
               fill
               priority
@@ -66,7 +66,7 @@ export default function Navbar() {
                     >
                       <Image
                         src="/divider-primary.svg"
-                        alt=""
+                        alt="Divider"
                         fill
                         className="object-contain"
                       />
