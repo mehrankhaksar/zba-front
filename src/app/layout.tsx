@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { iransans } from "@/fonts";
-import Navbar from "@/components/layout/Navbar";
+import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/Footer";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 export const metadata: Metadata = {
   title: "زندگی با آیه‌ها - پویش ملی حفظ آیه‌های قرآن کریم",
@@ -28,9 +29,11 @@ export default function RootLayout({
       className={cn("h-full", "antialiased", iransans.variable)}
     >
       <body className="min-h-full flex flex-col overflow-x-hidden">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        {/* <Footer /> */}
+        <TooltipProvider>
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          {/* <Footer /> */}
+        </TooltipProvider>
       </body>
     </html>
   );
