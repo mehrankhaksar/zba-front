@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import Icon1 from "@/assets/images/icon-1.svg";
-import Mobile from "@/assets/images/mobile.svg";
 import Image from "next/image";
 
 export default function Home() {

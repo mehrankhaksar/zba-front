@@ -15,8 +15,8 @@ const navItems = [
 
 export default function Footer() {
   return (
-    <footer className="relative mt-32">
-      <div className="absolute py-5 p-2.5 inset-x-80 -top-12 shadow-2xl rounded-xl bg-secondary text-secondary-foreground flex justify-around items-center">
+    <footer className="relative mt-40 lg:mt-32">
+      <div className="absolute py-5 p-2.5 inset-x-20 -top-20 lg:-top-12 shadow-2xl rounded-xl bg-secondary text-secondary-foreground flex flex-col lg:flex-row lg:justify-around lg:items-center gap-2.5">
         <div className="flex items-center gap-3 font-medium">
           <span className="bg-primary text-primary-foreground p-3 rounded-lg">
             <Phone />
@@ -29,7 +29,9 @@ export default function Footer() {
             >
               +982192003978
             </a>
-            (زمان پاسخگویی شنبه تا پنج شنبه ساعت 9 تا 18)
+            <p className="hidden md:block">
+              (زمان پاسخگویی شنبه تا پنج شنبه ساعت 9 تا 18)
+            </p>
           </div>
         </div>
         <div className="flex items-center gap-3 font-medium">
@@ -41,8 +43,8 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="bg-[#04062B] text-[#ffffff] py-20 px-2.5">
-        <div className="container mx-auto grid grid-cols-3 gap-20">
+      <div className="bg-[#04062B] text-[#ffffff] pt-28 lg:py-20 px-2.5 pb-5">
+        <div className="container mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-20">
           <div>
             <h6 className="font-bold border-b border-[#3d4455] pb-3 mb-3">
               درباره زندگی با آیه‌ها
@@ -78,7 +80,7 @@ export default function Footer() {
               ))}
             </nav>
           </div>
-          <div>
+          <div className="col-span-full lg:col-span-1">
             <h6 className="font-bold border-b border-[#3d4455] pb-3 mb-3">
               شبکه های‌اجتماعی
             </h6>
@@ -105,7 +107,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-secondary text-secondary-foreground py-6 px-2.5 flex items-center justify-around font-medium">
+      <div className="bg-secondary text-secondary-foreground py-6 px-2.5 flex flex-col sm:flex-row items-center justify-around font-medium">
         <Link href="https://avinmedia.ir/" target="_blank">
           طراحی و توسعه گروه فنی و هنری آوین.
         </Link>
