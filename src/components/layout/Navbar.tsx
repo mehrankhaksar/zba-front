@@ -21,7 +21,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-6 z-50">
+    <header className="sticky top-6 px-2.5 sm:px-0 z-50">
       <div className="container mx-auto h-24 bg-primary-gradient rounded-full p-0.5">
         <div className="relative h-full flex justify-between items-center bg-background rounded-full px-6">
           <div className="relative h-20 w-36 shrink-0">

@@ -27,8 +27,8 @@ export default function RootLayout({
       dir="rtl"
       className={cn("h-full", "antialiased", iransans.variable)}
     >
-      <body className="min-h-full flex flex-col">
-        {/* <Navbar /> */}
+      <body className="min-h-full flex flex-col overflow-x-hidden">
+        <Navbar />
         <main className="flex-1">{children}</main>
         {/* <Footer /> */}
       </body>
